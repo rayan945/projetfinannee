@@ -17,7 +17,7 @@ if (isset($_POST['envoi'])) {
         } else {
             $insertUser = $bdd->prepare('INSERT INTO users(nom, prenom, email, mdp) VALUES(?, ?, ?, ?)');
             if ($insertUser->execute(array($nom, $prenom, $email, $mdp))) {
-                echo "<script>alert('✅ Inscription réussie !'); window.location.href='api/login.php';</script>";
+                echo "<script>alert('✅ Inscription réussie !'); window.location.href='login.php';</script>";
             } else {
                 echo "<script>alert('❌ Une erreur est survenue.');</script>";
             }
@@ -61,14 +61,14 @@ if (isset($_POST['envoi'])) {
     </style>
 </head>
 <body>
-    <form method="POST" action="api/register.php">
+    <form method="POST" action="register.php">
         <h2>Inscription</h2>
         <input type="text" name="nom" placeholder="Prénom">
         <input type="text" name="prenom" placeholder="Nom">
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="mdp" placeholder="Mot de passe">
         <button type="submit" name="envoi">S'inscrire</button>
-        <p><a href="api/login.php">Déjà un compte ? Connecte-toi</a></p>
+        <p><a href="login.php">Déjà un compte ? Connecte-toi</a></p>
     </form>
 </body>
 </html>
