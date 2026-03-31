@@ -17,7 +17,7 @@ if (isset($_POST['login'])) {
             $_SESSION['nom'] = $user['nom'];
             $_SESSION['email'] = $user['email'];
 
-            echo "<script>alert('Connexion réussie !'); window.location.href='index.php';</script>";
+            echo "<script>alert('Connexion réussie !'); window.location.href='api/index.php';</script>";
         } else {
             echo "<script>alert('Email ou mot de passe incorrect.');</script>";
         }
@@ -60,7 +60,7 @@ if (isset($_POST['login'])) {
     </style>
 </head>
 <body>
-    <form method="POST" action="login.php">
+    <form method="POST" action="api/login.php">
         <h2>Connexion</h2>
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="mdp" placeholder="Mot de passe">
