@@ -12,7 +12,7 @@
 <!-- Header commun à toutes les pages -->
 <header>
     <div class="logo-container">
-        <a href="api/index.php" class="corner-logo">
+        <a href="index.php" class="corner-logo">
             <img src="logo/LOGO 1 DORÉ.png" alt="XYZ Shop Logo">
         </a>
     </div>
@@ -20,13 +20,13 @@
     <nav class="main-nav">
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="api/index.php" class="nav-link">
+                <a href="index.php" class="nav-link">
                     <span class="nav-text">Accueil</span>
                     <span class="nav-line"></span>
                 </a>
             </li>
             <li class="nav-item has-dropdown">
-                <a href="api/produits.php" class="nav-link">
+                <a href="produits.php" class="nav-link">
                     <span class="nav-text">Produits</span>
                     <i class="fas fa-chevron-down"></i>
                     <span class="nav-line"></span>
@@ -35,7 +35,7 @@
                 </div>
             </li>
             <li class="nav-item has-dropdown">
-                <a href="api/apropos.php" class="nav-link">
+                <a href="apropos.php" class="nav-link">
                     <span class="nav-text">Entreprise</span>
                     <i class="fas fa-chevron-down"></i>
                     <span class="nav-line"></span>
@@ -43,7 +43,7 @@
                 
             </li>
             <li class="nav-item">
-                <a href="api/contact.php" class="nav-link">
+                <a href="contact.php" class="nav-link">
                     <span class="nav-text">Contact</span>
                     <span class="nav-line"></span>
                 </a>
