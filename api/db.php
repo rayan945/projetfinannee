@@ -4,9 +4,9 @@ function getPDO(): PDO {
     if ($pdo === null) {
         try {
             $pdo = new PDO(
-                'mysql:host=sql7.freesqldatabase.com;dbname=sql7823249;charset=utf8',
-                'sql7823249',
-                'PCAG4XI7E4'
+                'mysql:host=sql7.freesqldatabase.com;dbname=sql7824567;charset=utf8',
+                'sql7824567',
+                '7VWYgqaWmF'
             );
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
